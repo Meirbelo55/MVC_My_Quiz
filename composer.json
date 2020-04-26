@@ -6,6 +6,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "sensio/framework-extra-bundle": "^5.5",
+        "sensiolabs/security-checker": "^6.0",
         "symfony/apache-pack": "^1.0",
         "symfony/asset": "5.0.*",
         "symfony/console": "5.0.*",
@@ -34,8 +35,7 @@
         "symfony/debug-pack": "^1.0",
         "symfony/flex": "^1.6",
         "symfony/maker-bundle": "^1.15",
-        "symfony/monolog-bundle": "^3.0",
-        "symfony/profiler-pack": "*",
+        "symfony/profiler-pack": "^1.0",
         "symfony/test-pack": "*",
         "symfony/var-dumper": "*"
     },
@@ -67,7 +67,8 @@
     "scripts": {
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
-            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+            "assets:install %PUBLIC_DIR%": "symfony-cmd",
+            "security-checker security:check": "script"
         },
         "post-install-cmd": [
             "@auto-scripts"
