@@ -10,7 +10,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class QuestionController
 {
     /**
-     * @Route("/")
+     * @Route("/home")
      */
     public function homepage()  {
       return new Response('hello world');
